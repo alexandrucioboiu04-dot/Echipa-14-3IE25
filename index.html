@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Tsunami - PC Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="score-board">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="zombies">Zombie Horde: <span id="zombie-count">3</span></div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+            </div>
+            <div class="controls">
+                <div class="control-hint">Space/W/Up Arrow to jump</div>
+                <div class="control-hint">Map moves automatically!</div>
+                <div class="control-hint">Convert people to grow your horde!</div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="1200" height="600"></canvas>
+        
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <p>Zombie Horde Size: <span id="finalHorde">3</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+        
+        <div class="start-screen" id="startScreen">
+            <h1>Zombie Tsunami</h1>
+            <p>Lead your zombie horde! Convert people to zombies and destroy obstacles!</p>
+            <div class="game-info">
+                <p><strong>🎯 Goal:</strong> Grow your zombie horde by converting people</p>
+                <p><strong>🚗 Objects:</strong> Destroy cars by jumping zombies onto them</p>
+                <p><strong>❓ Power-ups:</strong> Collect question mark boxes for special abilities</p>
+                <p><strong>🌊 Tsunami:</strong> Use W/Space to control tsunami height</p>
+                <p><strong>🎮 Controls:</strong> Only jumping! Map moves automatically</p>
+            </div>
+            <button id="startBtn">Start Game</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html> 
