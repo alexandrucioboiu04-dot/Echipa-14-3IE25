@@ -78,7 +78,7 @@ A fun zombie horde game inspired by the classic mobile game, optimized for PC pl
 - **Physics**: Custom collision detection and zombie jumping mechanics
 - **Camera**: Continuous horizontal scrolling
 - **Responsive**: Optimized for PC screens (1200x600)
-
+- **Multiplayer**: Multiple players based on p2p
 ## File Structure
 
 ```
@@ -119,5 +119,6 @@ Works best in modern browsers:
 - **Auto-Scrolling**: Map moves automatically to the right
 - **Object Interaction**: Jump zombies onto objects to destroy them
 - **Formation Movement**: Zombies stay in a fixed formation
+
 
 Enjoy leading your zombie tsunami! 🧟‍♂️🌊🎮 
